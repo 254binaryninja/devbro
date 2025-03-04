@@ -9,9 +9,9 @@
   },
   "scripts": {
     "release": "semantic-release",
-    "build": "rspack build",
+    "build": "rspack build --watch",
     "clean": "rimraf dist",
-    "prepublish": "bun run clean && bun run build"
+    "prepublish": "npm run clean && npm run build"
   },
   "files": [
     "dist",
